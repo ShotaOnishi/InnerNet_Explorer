@@ -1,6 +1,6 @@
-# innner-net-app
+# InnerNet Explorer
 
-> InnerNet app
+> Offline Reference App
 
 ## Build Setup
 
