@@ -55,6 +55,8 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
-    "admin-lte": "^2.3.6"
+    "admin-lte": "^2.3.6",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.0"
   }
 }
