@@ -3,6 +3,10 @@ import Electron from 'vue-electron';
 import Resource from 'vue-resource';
 import Router from 'vue-router';
 
+import 'jquery';
+import 'bootstrap';
+import 'admin-lte';
+
 import App from './App';
 import routes from './routes';
 
