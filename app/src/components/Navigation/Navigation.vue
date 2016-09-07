@@ -1,5 +1,7 @@
 <style scoped src="./Navigation.scss"></style>
 <template src="./Navigation.html"></style>
 <script>
-  // Do something
+  export default {
+    name: 'navigation-component',
+  };
 </script>
