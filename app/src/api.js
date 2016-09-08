@@ -1,27 +1,29 @@
+import Vue from 'vue';
+
 export default class ApiService {
   constructor() {
+    const resource = function (url) {
+      return Vue.resource(url, null, null, { emulateJSON: true });
+    };
+
     // TODO this should be changed according to the env.
-    this.API_URL = 'http://localhost:3000/api/v1';
-    this.API_ENDPOINTS = {
-      find: '/pages/find',
-      index: '/pages',
-      show: '/pages',
+    const API_URL = 'http://localhost:3000/api/v1';
+    this.APIs = {
+      index: resource(`${API_URL}/pages`),
+      show: resource(`${API_URL}/pages/:id`),
+      find: resource(`${API_URL}/pages/find`),
     };
   }
 
   executeFind(query) {
-    console.log(query);
-
-    // TODO
+    return this.APIs.find.get({}, { q: query });
   }
 
   executeIndex() {
-    // TODO
+    return this.APIs.index.get();
   }
 
   execiteShow(id) {
-    console.log(id);
-
-    // TODO
+    return this.APIs.show.get({ id });
   }
 }

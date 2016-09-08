@@ -9,8 +9,8 @@
     store,
 
     components: {
-      Header,
-      Navigation,
+      HeaderComponent: Header,
+      NavigationComponent: Navigation,
     },
   };
 </script>

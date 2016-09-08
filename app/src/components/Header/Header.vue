@@ -13,9 +13,9 @@
     },
 
     watch: {
-      searchQuery: (() => {
+      searchQuery() {
         this.executeSearch(this.searchQuery);
-      }),
+      },
     },
 
     ready() {
@@ -24,9 +24,10 @@
 
     methods: {
       executeSearch(query) {
-        apiService.executeFind(query).then(() => {
-          // TODO
-        });
+        console.log(query);
+
+        // dummy for now
+        apiService.executeFind(query);
       },
     },
   };

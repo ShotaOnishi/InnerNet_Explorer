@@ -68,7 +68,7 @@ let config = {
     new webpack.NoErrorsPlugin(),
     new webpack.ProvidePlugin({
       'jQuery': 'jquery',
-      '$': 'jquery'
+      '$': 'jquery',
     })
   ],
   output: {
