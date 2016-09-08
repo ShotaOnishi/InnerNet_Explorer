@@ -4,12 +4,14 @@ export default class ApiService {
     this.API_URL = 'http://localhost:3000/api/v1';
     this.API_ENDPOINTS = {
       find: '/pages/find',
-      index: '/pages'
-      show: '/pages'
-    }
+      index: '/pages',
+      show: '/pages',
+    };
   }
 
   executeFind(query) {
+    console.log(query);
+
     // TODO
   }
 
@@ -18,6 +20,8 @@ export default class ApiService {
   }
 
   execiteShow(id) {
+    console.log(id);
+
     // TODO
   }
 }
