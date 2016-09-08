@@ -6,6 +6,8 @@ import 'jquery';
 import 'bootstrap';
 import 'admin-lte';
 
+import './venders.scss';
+
 import MainComponent from './components/Main/Main';
 import routes from './routes';
 
