@@ -19,15 +19,14 @@
     },
 
     ready() {
-      // TODO
+      // noop
     },
 
     methods: {
       executeSearch(query) {
-        console.log(query);
-
-        // dummy for now
-        apiService.executeFind(query);
+        apiService.executeFind(query).then(result => {
+          console.log(result);
+        });
       },
     },
   };

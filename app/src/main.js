@@ -1,6 +1,5 @@
 import Vue from 'vue';
 import Electron from 'vue-electron';
-import Resource from 'vue-resource';
 import Router from 'vue-router';
 
 import 'jquery';
@@ -11,7 +10,6 @@ import MainComponent from './components/Main/Main';
 import routes from './routes';
 
 Vue.use(Electron);
-Vue.use(Resource);
 Vue.use(Router);
 Vue.config.debug = true;
 

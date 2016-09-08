@@ -1,8 +1,11 @@
 import Vue from 'vue';
+import Resource from 'vue-resource';
+
+Vue.use(Resource);
 
 export default class ApiService {
   constructor() {
-    const resource = function (url) {
+    const resource = function resource(url) {
       return Vue.resource(url, null, null, { emulateJSON: true });
     };
 
