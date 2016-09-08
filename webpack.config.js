@@ -65,7 +65,11 @@ let config = {
       template: './app/main.ejs',
       title: settings.name
     }),
-    new webpack.NoErrorsPlugin()
+    new webpack.NoErrorsPlugin(),
+    new webpack.ProvidePlugin({
+      'jQuery': 'jquery',
+      '$': 'jquery'
+    })
   ],
   output: {
     filename: '[name].js',
