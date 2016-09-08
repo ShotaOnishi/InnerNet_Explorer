@@ -7,7 +7,7 @@ import 'jquery';
 import 'bootstrap';
 import 'admin-lte';
 
-import App from './App';
+import MainComponent from './components/Main/Main';
 import routes from './routes';
 
 Vue.use(Electron);
@@ -25,4 +25,4 @@ router.redirect({
   '*': '/',
 });
 
-router.start(App, 'app');
+router.start(MainComponent, 'app');
