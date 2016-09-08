@@ -24,6 +24,10 @@ let config = {
         loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
       },
       {
+        test: /\.scss$/,
+        loaders: ['style', 'css', 'sass']
+      },
+      {
         test: /\.html$/,
         loader: 'vue-html-loader'
       },
