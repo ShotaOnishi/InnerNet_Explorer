@@ -1,15 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html,
-body { height: 100%; }
-
-body {
-  align-items: center;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  text-align: center;
+.wrapper, .content-wrapper {
+  height: 100%;
 }
