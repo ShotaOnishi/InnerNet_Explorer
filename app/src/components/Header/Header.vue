@@ -24,7 +24,7 @@
 
     methods: {
       executeSearch(query) {
-        apiService.executeFind(query).then(result => {
+        apiService.executeFind(query).then(() => {
           // TODO
         });
       },
