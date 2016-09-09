@@ -1,7 +1,11 @@
 <style scoped src="./ArticleList.scss"></style>
 <template src="./ArticleList.html"></template>
 <script>
-  export default {
+  import Article from '../Article/Article';
 
+  export default {
+    components: {
+      ArticleComponent: Article,
+    },
   };
 </script>
