@@ -1,19 +1,14 @@
 <section class="content">
   <div class="article-list">
     <div class="row">
-
-      <div class="col-sm-4">
-        <article-component></article-component>
+      <div class="col-sm-4" v-for="article in articles">
+        <article-component
+          :title="article.name"
+          :url="article.url"
+          :image-url="article.image_url"
+          :is-favorite="article.is_favorite"
+        />
       </div>
-
-      <div class="col-sm-4">
-        <article-component></article-component>
-      </div>
-
-      <div class="col-sm-4">
-        <article-component></article-component>
-      </div>
-
     </div>
   </div>
 </section>
