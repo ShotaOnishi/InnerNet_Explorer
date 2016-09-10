@@ -5,7 +5,7 @@
     props: {
       title: String,
       url: String,
-      imageUrl: String,
+      image: String,
       isFavorite: Boolean,
     },
   };

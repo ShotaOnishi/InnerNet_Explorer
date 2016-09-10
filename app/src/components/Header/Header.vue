@@ -25,6 +25,7 @@
     methods: {
       executeSearch(query) {
         apiService.executeFind(query).then(result => {
+          console.log('検索結果');
           console.log(result);
         });
       },

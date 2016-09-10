@@ -3,9 +3,11 @@
     <div class="row">
       <div class="col-sm-4" v-for="article in articles">
         <article-component
-          :title="article.name"
+          :title="article.title"
           :url="article.url"
-          :image-url="article.image_url"
+          :domain="article.domain"
+          :tag = "article.tag"
+          :image="article.image"
           :is-favorite="article.is_favorite"
         />
       </div>
