@@ -5,8 +5,17 @@
     props: {
       title: String,
       url: String,
-      image: String,
       isFavorite: Boolean,
+
+      image: {
+        coerce: function coerce(v) {
+          return (`http://localhost:3000/${v}`);
+        },
+      },
+    },
+
+    ready() {
+      // todo
     },
   };
 </script>
