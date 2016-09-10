@@ -9,6 +9,7 @@
           :tag="article.tag"
           :image="article.image_url"
           :is-favorite="article.is_favorite"
+          v-on:click="jumpToView(article.image_url)"
         />
       </div>
     </div>

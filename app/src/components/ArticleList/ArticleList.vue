@@ -27,6 +27,15 @@
           this.articles = result.data.data;
         });
       },
+
+      jumpToView(imageUrl) {
+        this.$router.go({
+          name: 'article-view',
+          query: {
+            image_url: imageUrl,
+          },
+        });
+      },
     },
   };
 </script>
