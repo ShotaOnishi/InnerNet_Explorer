@@ -1,0 +1,11 @@
+.box-header {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.box-body > .thumbnail {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
